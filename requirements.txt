@@ -1,0 +1,16 @@
+-i https://mirrors.aliyun.com/pypi/simple
+fastapi == 0.103.2
+uvicorn[standard] == 0.22.0
+gunicorn == 21.2.0
+pydantic == 2.5.3
+sqlalchemy 
+dynaconf == 3.1.11
+loguru == 0.7.2
+# psycopg2
+pdfminer.six == 20221105
+ultralytics == 8.0.145
+PyMuPDF == 1.22.5
+Pillow == 9.5.0
+torch == 1.13.1
+opencv-python-headless == 4.9.0.80
+paddleocr>=2.0.1

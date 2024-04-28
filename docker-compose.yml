@@ -1,0 +1,27 @@
+version: '2.3'  # for dev
+
+services:
+  pdfparser:
+    image: pdfparser:v1.0
+    build:
+      context: .
+      dockerfile: docker/base.dockerfile
+    restart: unless-stopped
+    ports:
+      - 5555:5555
+    environment:
+      - TZ=Asia/Shanghai
+    volumes:
+      - ./logs:/app/logs
+      - ./config:/app/config
+    networks:
+      - pdfparser.network
+
+pdfparser:
+  pdfparser.network:
+    driver: bridge
+    ipam:
+      config:
+      - gateway: 8.8.151.1
+        subnet: 8.8.151.1/24
+      driver: default

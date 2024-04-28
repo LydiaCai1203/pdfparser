@@ -1,0 +1,19 @@
+{
+    "potionx_env": "development",
+    "development": {
+        "potionx_rel_db": null,
+        "host": "0.0.0.0",
+        "port": 5555,
+        "workers": 1,
+        "reload": true,
+        "layout_model_path": "/home/abin/workspace/model/8npt/best.pt"
+    },
+    "production": {
+        "potionx_rel_db": null,
+        "host": "0.0.0.0",
+        "port": 5555,
+        "workers": 1,
+        "reload": true,
+        "layout_model_path": "/app/model/8npt/best.pt"
+    }
+}
